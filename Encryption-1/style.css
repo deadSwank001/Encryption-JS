@@ -9,7 +9,10 @@ body {
     max-width: 600px;
     margin: 0 auto;
     text-align: center;
+    flex-direction: row;
+    align-items: center;
 }
+
 
 textarea {
     width: 100%;
@@ -22,6 +25,7 @@ button {
     color: #fff;
     border: none;
     cursor: pointer;
+    margin-bottom: 10px;
 }
 
 button:hover {
