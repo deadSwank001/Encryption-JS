@@ -4,21 +4,24 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>User Location with QR Code</title>
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="style.css" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.qrcode/1.0/jquery.qrcode.min.js"></script>
   </head>
   <body>
     <div class="container">
+      <button id="ptbr" onclick="changeLanguage('ptbr')">pt-br</button>
+      <button id="en" onclick="changeLanguage('en')">en</button>
       <h1>Your Location and QR Code</h1>
       <button id="locationButton">Get Location</button>
       <div id="coordinatesBox" class="hidden">
-        <h2>Your Coordinates:</h2>
+        <h2 id="cordinatesTitle">Your Coordinates:</h2>
         <p id="coordinates"></p>
-        <h2>Your QR Code:</h2>
+        <h2 id="qrcodeTitle">Your QR Code:</h2>
         <div id="qrcode"></div>
       </div>
     </div>
     <script src="script.js"></script>
+    <script src="translatorScript.js"></script>
   </body>
 </html>
